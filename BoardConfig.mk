@@ -12,14 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-#
-# This file sets variables that control the way modules are built
-# thorughout the system. It should not be used to conditionally
-# disable makefiles (the proper mechanism to control what gets
-# included in a build is to use PRODUCT_PACKAGES in a product
-# definition file).
-#
-
 # inherit from common D2
 -include device/samsung/d2-common/BoardConfigCommon.mk
 
@@ -27,4 +19,4 @@
 -include vendor/samsung/d2r530/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := d2cri
+TARGET_OTA_ASSERT_DEVICE := d2cri,d2lte
